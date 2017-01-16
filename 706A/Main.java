@@ -2,7 +2,7 @@
 
 
 /*
- * Solution: 
+ * Solution: https://github.com/bibhuty/Codeforces/blob/master/706A/Main.java
  */
 
 
