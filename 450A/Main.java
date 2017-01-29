@@ -8,7 +8,7 @@
 
 /*
  * Prerequisite:
- * 	- Simple mathematics
+ *  - Simple mathematics
  *  - Round Robin Algorithm(optional)
  */
 
@@ -27,6 +27,8 @@ public class Main {
 	
 	static class ProblemSolver{
 		public void solveTheProblem(InputReader in,PrintWriter out){
+			
+			//Take the necessary inputs
 			int n=in.nextInt();
 			int m=in.nextInt();
 			int[] children=new int[n];
@@ -36,6 +38,8 @@ public class Main {
 				queue.add(i);
 			}
 			
+			//Use the queue to keep track of the students availaible
+			//till you find the last student
 			while(queue.size()!=1){
 				if(children[queue.peek()]<=m)queue.poll();
 				else{
@@ -44,6 +48,8 @@ public class Main {
 				}
 			}
 			
+			
+			//Display the result
 			out.print(queue.poll()+1);
 		}					
 	}
